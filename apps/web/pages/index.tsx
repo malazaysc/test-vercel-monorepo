@@ -5,7 +5,7 @@ export default function Web() {
   return (
     <div>
       <Header />
-      <h1>Web</h1>
+      <h1>Web Main Page</h1>
       <Button />
     </div>
   );
