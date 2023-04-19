@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const VERCEL_URL : String = process.env.VERCEL_URL,
+const VERCEL_URL: String = process.env.VERCEL_URL;
 
 export const Header = () => {
   return (
