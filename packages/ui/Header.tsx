@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-const VERCEL_URL: String = process.env.VERCEL_URL;
+// const VERCEL_URL: String = process.env.VERCEL_URL;
+const VERCEL_URL: String = "https://test-vercel-monorepo-web.vercel.app";
 
 export const Header = () => {
   return (
