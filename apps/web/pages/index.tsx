@@ -7,6 +7,9 @@ export default function Web() {
       <Header />
       <h1>Web Main Page</h1>
       <Button />
+      <div>
+        <p>This is a preview page</p>
+      </div>
     </div>
   );
 }
