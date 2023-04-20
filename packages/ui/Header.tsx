@@ -5,15 +5,16 @@ import getConfig from 'next/config';
 
 const { publicRuntimeConfig } = getConfig();
 const { VERCEL_URL } = publicRuntimeConfig;
+const BASE_URL = `https://${VERCEL_URL}`
 
 export const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <Link href={`${VERCEL_URL}`} className="header-link">
+        <Link href={`${BASE_URL}`} className="header-link">
           Web
         </Link>
-        <Link href={`${VERCEL_URL}/docs`} className="header-link">
+        <Link href={`${BASE_URL}/docs`} className="header-link">
           Docs
         </Link>
       </div>
