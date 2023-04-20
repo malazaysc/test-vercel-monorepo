@@ -4,7 +4,7 @@ import Link from "next/link";
 import getConfig from 'next/config';
 
 const { publicRuntimeConfig } = getConfig();
-const { VERCEL_URL, VERCEL_ENV, VERCEL_GIT_COMMIT_REF  } = publicRuntimeConfig;
+const { VERCEL_ENV, VERCEL_GIT_COMMIT_REF  } = publicRuntimeConfig;
 
 // In preview deployments, the URL will be something like this:
 // https://test-vercel-monorepo-web-git-feature-test-preview-malazaysc.vercel.app/
@@ -24,7 +24,7 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <Link href={`${BASE_URL}`} className="header-link">
+        <Link href={`${BASE_URL}/`} className="header-link">
           Web
         </Link>
         <Link href={`${BASE_URL}/docs`} className="header-link">
