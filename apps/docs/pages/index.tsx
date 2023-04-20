@@ -7,6 +7,9 @@ export default function Docs() {
       <Header />
       <h1>Docs</h1>
       <Button />
+      <div>
+        <p>This is a preview page</p>
+      </div>
     </div>
   );
 }
