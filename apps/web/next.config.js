@@ -20,6 +20,6 @@ module.exports = {
     ];
   },
   publicRuntimeConfig: {
-    VERCEL_URL: process.env.VERCEL_URL,
+    VERCEL_URL: process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`,
   },
 };
