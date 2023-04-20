@@ -10,7 +10,6 @@ export default function Docs() {
       <div>
         <p>This is a preview page</p>
       </div>
-      <p>{NEXT_PUBLIC_TEST_STR}</p>
     </div>
   );
 }
