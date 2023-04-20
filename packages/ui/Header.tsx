@@ -11,9 +11,12 @@ const { VERCEL_URL, VERCEL_ENV, VERCEL_GIT_COMMIT_REF  } = publicRuntimeConfig;
 // https://test-vercel-monorepo-web-git-${VERCEL_GIT_COMMIT_REF}-malazaysc.vercel.app/
 
 // In production deployments, the URL will be: https://test-vercel-monorepo-web.vercel.app
+
+const gitBranch = VERCEL_GIT_COMMIT_REF.replace('/', '-');
+
 const productionURL = 'https://test-vercel-monorepo-web.vercel.app';
 
-const previewURL = `https://test-vercel-monorepo-web-git-${VERCEL_GIT_COMMIT_REF}-malazaysc.vercel.app`;
+const previewURL = `https://test-vercel-monorepo-web-git-${gitBranch}-malazaysc.vercel.app`;
 
 const BASE_URL = VERCEL_ENV === 'production' ? productionURL : previewURL;
 
