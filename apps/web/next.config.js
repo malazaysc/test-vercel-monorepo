@@ -1,4 +1,4 @@
-const GIT_BRANCH = process.env.VERCEL_GIT_COMMIT_REF.replace('/', '-');
+const GIT_BRANCH = process.env.VERCEL_GIT_COMMIT_REF?.replace('/', '-') || 'local_branch';
 const IS_PREVIEW = process.env.VERCEL_ENV === 'preview';
 
 const DOCS_BASE_URL = IS_PREVIEW ? `https://test-vercel-monorepo-docs-git-${GIT_BRANCH}-malazaysc.vercel.app` : 'https://test-vercel-monorepo-docs.vercel.app';
